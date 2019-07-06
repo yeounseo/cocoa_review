@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Awesome Flex</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        .father {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        /* flex를 이용하면, 쉽게 정리 할 수 있다. */
+        /* 일단 부모 클래스를 만들고, 박스를 만든다. */
+        /* 부모 박스에 적용한다. */
+        /* justify-content : 수평으로 적용 */
+        /* align-items : 수직으로 적용 */
+
+        /* 만약 flex-direction을 row로 하면, justify-content가 수평으로 적용,
+        align-items는 수직 */
+
+        .box {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* 
+        flex를 이용하면 , 
+        father박스는 아래 딸려있는 .box를 움직이고,
+        .box는 그 안에 들어가 있는 contents를 움직인다. */
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+
+</html>

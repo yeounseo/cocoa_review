@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>display</title>
+    <style>
+        .box {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        .box2 {
+            display: inline;
+            background: blue;
+            color: white;
+            border: 2px solid black
+        }
+
+        .linein {
+            background-color: beige;
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            display: inline;
+        }
+
+        .box3 {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>display</h1>
+    <h2>block</h2>
+    <!-- 블록은 그 바로 옆에 아무것도 없을 때, 블록! -->
+    <!-- 블록은 폭, 높이가 존재하지만, 그 옆에 어떤 element도 놓을 수 없다. -->
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <h2>inline</h2>
+    <!-- 인라인은 박스의 모든 property 설정값을 지운다. -->
+    <!-- 인라인이라 함은 텍스트! -->
+    <!-- 텍스트는 높이도 폭도 없다. -->
+    <!-- 컨텐츠의 길이만 존재할 뿐이다. -->
+    <!-- <div class="box2">inline lorem</div>
+    <div class="box2">inline lorem</div>
+    <div class="box2">inline lorem</div> -->
+    <span class="linein">1</span>
+    <span class="linein">2</span>
+    <span class="linein">3</span>
+    <h2>inline-block</h2>
+    <!-- 인라인 블록, 박스가 서로 옆에 있다. -->
+    <!-- inline 속성을 가진 block이라고 볼 수 있다. -->
+    <!-- inline-block이라고 설정하면, 박스의 폭, 높이가 존재하고 그리고 서로서로 옆으로 놓을 수 있다. -->
+    <!-- block은 박스 -->
+    <div class="box3"></div>
+    <div class="box3"></div>
+    <div class="box3"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+/* selector */
+/* h1 { } */
+
+/* property */
+/* property-name: value; */
+/* 끝의 ;을 잊지 말자 */
+
+h1 {
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+}
+
+header {
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+}
+
+/* ID , Class 사용 */
+/* ID는 #을 사용 */
+#wrap {
+    property-name: value;
+}
+
+/* Class는 .을 사용 */
+
+.contents {
+    property-name: value;
+}
+
+h1 {
+    color: green;
+    font-size: 16px;
+}
+
+body {
+    background-color: yellowgreen;
+}

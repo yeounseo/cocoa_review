@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        body,
+        html {
+            /* 아래 처럼 설정하는 이유는 */
+            /* 브라우저가 갖고있는 default값을 상쇄 시키기 위함이다. */
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 400%;
+            background-color: red;
+        }
+
+        /* 디폴트로 모든 박스의 포지션은 static이다. */
+        /* 그 element를 거기 놓으면 거기 있을 것이다, 라는 의미  */
+
+        /* Position Fixed
+         #boxOne {
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            
+            position: static;
+        }
+        */
+
+        /* fixed 하면 포지션이 고정된다.
+            스크롤에 따라서 계속 붙어 이동한다. */
+        /*
+        #boxTwo {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            
+            position: fixed;
+            right: 500px;
+            bottom: 30px;
+        } */
+
+        /* 포지션을 설정하면 상하좌우 간격을 설정할 수 있다. */
+
+        .abs-box {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        /* 부모에 해당하는 box에 
+        position: relative를 설정해주면, 부모 box를 기준으로 이동한다. */
+
+        .abs-child {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+
+        /* html 상에서 father에 해당하는 박스를 찾지 못해서 본문의 body 기준으로 이동한 박스를 볼 수 있다. */
+    </style>
+</head>
+
+<body>
+    <div class="abs-box">
+        <div class="abs-child"></div>
+    </div>
+    <!-- position : fixed
+         <div id="boxOne" class="box">
+        <div class="box-child"></div>
+    </div>
+    <div id="boxTwo" class="box">
+        <div class="box-child"></div>
+    </div> -->
+</body>
+
+</html>
