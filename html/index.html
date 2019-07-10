@@ -22,26 +22,7 @@
             <i class="fas fa-battery-full"></i>
         </div>
     </div>
-    <main class="chats">
-        <ul class="chats__list">
-            <li class="chats__chat chat">
-                <a href="chat.html">
-                    <div class="chat__column">
-                        <img class="chat__avatar g-avatar" src="../images/avatar.jpg" alt="avatar">
-                        <div class="chat__content">
-                            <span class="chat__username">
-                                Unseo
-                            </span>
-                            <span class="chat__preview">Going home!</span>
-                        </div>
-                    </div>
-                    <div class="chat__column">
-                        <span class="chat__timestamp">Yesterday</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </main>
+
     <header class="header">
         <div class="header__header-column">
             <h1 class="header__title">Chats</h1>
@@ -58,6 +39,34 @@
             </span>
         </div>
     </header>
+    <main class="chats">
+        <ul class="chats__list">
+            <li class="chats__chat chat">
+                <a href="chat.html">
+                    <div class="chats__chat friend friend--lg">
+                        <div class="friend__column">
+                            <img src="../images/avatar1.jpg" class="g-avatar friend__avatar" />
+                            <div class="friend__content">
+                                <span class="friend__name">
+                                    Park Ji hye
+                                </span>
+                                <span class="friend__bottom-text">
+                                    Going Home!
+                                </span>
+                            </div>
+                        </div>
+                        <div class="friend__column">
+                            <div class="friend__now-listening">
+                                <span class="chat__timestamp">
+                                    March 8
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </main>
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item">
@@ -67,6 +76,7 @@
             </li>
             <li class="nav__list-item">
                 <a href="index.html" class="nav__list-link">
+                    <div class="nav__badge">8</div>
                     <i class="fas fa-comment"></i>
                 </a>
             </li>
